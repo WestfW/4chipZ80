@@ -64,9 +64,9 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="History" color="10" fill="1" visible="no" active="yes"/>
+<layer number="100" name="History" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Documentation" color="6" fill="1" visible="no" active="yes"/>
-<layer number="102" name="To-Do" color="24" fill="1" visible="no" active="yes"/>
+<layer number="102" name="To-Do" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="103" name="old-tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
 <layer number="105" name="template" color="7" fill="1" visible="no" active="yes"/>
@@ -80,7 +80,7 @@
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
-<layer number="121" name="_tSilk" color="15" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tSilk" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bplace" color="14" fill="1" visible="no" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
@@ -4042,7 +4042,7 @@ By "Just4Fun"    PCB by "WestfW"</text>
 <text x="38.136546875" y="22.8149625" size="1.27" layer="121" font="fixed" ratio="16">WR</text>
 <text x="63.04391875" y="90.83405625" size="1.27" layer="121" font="fixed" ratio="16">SDA</text>
 <text x="60.410671875" y="89.34249375" size="1.27" layer="121" font="fixed" ratio="16">SCL</text>
-<text x="76.383184375" y="93.21606875" size="1.27" layer="121" ratio="16" rot="R270">RTS</text>
+<text x="76.383184375" y="93.21606875" size="1.27" layer="121" ratio="16" rot="R270">DTR</text>
 <text x="73.842371875" y="93.374871875" size="1.27" layer="121" ratio="16" rot="R270">RX</text>
 <text x="71.142759375" y="93.374871875" size="1.27" layer="121" ratio="16" rot="R270">TX</text>
 <text x="68.760746875" y="93.21606875" size="1.27" layer="121" ratio="16" rot="R270">VCC</text>
@@ -4067,13 +4067,9 @@ Z84C0004</text>
 <wire x1="32.2365625" y1="13.97446875" x2="32.2365625" y2="13.339265625" width="0.4" layer="121"/>
 <wire x1="32.2365625" y1="13.339265625" x2="34.142171875" y2="13.339265625" width="0.4" layer="121"/>
 <text x="-6.192215625" y="15.87713125" size="1.27" layer="100" font="fixed" ratio="12">20170111 by WestfW: 8pm - Sent Gebers to PCBWAY</text>
-<text x="-2.2232125" y="97.0272875" size="1.4224" layer="102" ratio="11">Add passive component values</text>
-<text x="-2.3820125" y="94.645278125" size="1.4224" layer="102" ratio="11">Change Passive names to values on silkscreen</text>
 <text x="-6.192215625" y="17.94154375" size="1.27" layer="100" font="fixed" ratio="12">20170116 by WestfW: PCB arrives!</text>
 <text x="-2.857396875" y="20.00595625" size="1.27" layer="100" font="fixed" ratio="12">20170116 by WestfW: DAMNIT!  new SCL pad is on top of GND trace :-(  SHORT!</text>
 <text x="-2.857396875" y="22.07036875" size="1.27" layer="100" font="fixed" ratio="12">20170116 by WestfW: Increase Bottom RestRing.  Move new SDA pad.</text>
-<text x="-2.382015625" y="87.97564375" size="1.4224" layer="102" ratio="11">Thermals for GND polygon ?</text>
-<text x="-2.382015625" y="85.43483125" size="1.4224" layer="102" ratio="11">Power connectors are 2mm.  Should they be 0.1inch?</text>
 <wire x1="21.59781875" y1="16.965015625" x2="21.34381875" y2="16.711015625" width="0.2032" layer="121"/>
 <wire x1="21.59781875" y1="18.235015625" x2="21.34381875" y2="18.489015625" width="0.2032" layer="121"/>
 <wire x1="18.29581875" y1="18.489015625" x2="18.04181875" y2="18.235015625" width="0.2032" layer="121"/>
@@ -4112,6 +4108,10 @@ Z84C0004</text>
 <text x="-2.8574" y="32.709415625" size="1.27" layer="100" font="fixed" ratio="12">20170202 by WestfW: replace PWR1 connector with 2.54mm spaced pins, address some ERC warnings</text>
 <text x="26.67" y="59.055" size="1.778" layer="1" ratio="16">TOP</text>
 <text x="30.1625" y="62.5475" size="1.778" layer="16" ratio="16" rot="MR0">BOTTOM</text>
+<text x="-2.54" y="95.5675" size="2.1844" layer="102" ratio="18">!! THIS BOARD HAS NOT BEEN FABBED OR TESTED !!</text>
+<text x="-2.2225" y="93.0275" size="1.6764" layer="102" ratio="14">(However, it should have only "bug fixes" since the last tested version)</text>
+<text x="-2.8574" y="37.471915625" size="1.27" layer="100" font="fixed" ratio="12">20170204 by WestfW: Change "RTS" label on FTDI conn to "DTR"</text>
+<text x="-5.3974" y="34.614415625" size="1.6764" layer="100" font="fixed" ratio="12">20170203 by WestfW: Commit to RCS, Github.  "Publish!"</text>
 </plain>
 <libraries>
 <library name="zilog">
