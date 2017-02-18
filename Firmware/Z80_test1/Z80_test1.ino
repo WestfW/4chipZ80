@@ -303,6 +303,26 @@ void loop()
 
 
     break;
+  case 'l': // LED test.  Do without Z80 present, probably.
+    pinMode(BUSACK_, OUTPUT);
+    digitalWrite(BUSACK_, 1);  // Turn off Busack
+    digitalWrite(WAIT_RES_,0); // Resume off
+    digitalWrite(USER, 1);  // User off.
+    // We can't do anything about HALT, which is driven by the Z80.
+    // We can't do anything about IORQ, cause it's driven by a FF driven by Z80.
+    for (data=0; data < 10; data++) {
+      digitalWrite(BUSACK_, 0);  // Turn on Busack
+      delay(400);
+      digitalWrite(BUSACK_, 1);  // Turn off Busack
+      digitalWrite(WAIT_RES_,1); // Resume on
+      delay(400);
+      digitalWrite(WAIT_RES_,0); // Resume off
+      digitalWrite(USER, 0);  // User on
+      delay(400);
+      digitalWrite(USER, 1);  // User off.
+    }
+    pinMode(BUSACK_, INPUT);
+    break;    
   }
 }
 
