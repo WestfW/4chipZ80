@@ -1,0 +1,10 @@
+The EAGLE .BRD and .SCH files are Open Source Hardware released under the Creative Commons Share-alike license,
+which is pretty permissive and allows commercial use, resale, and etc, with the only restrictions being that any
+deriavte designs also be released under a similar license, and to include attribution when used.
+
+https://creativecommons.org/licenses/by-sa/4.0/
+
+The FIG-Forth port remains in the public domain (as was the original.)
+
+The DESIGN, ATmega32 firmware, and Z80 firmware was all written by someone else, and doesn't currently have
+a clear licsense.  See https://hackaday.io/project/19000-a-4-4ics-z80-homemade-computer-on-breadboard
