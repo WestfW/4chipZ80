@@ -5969,8 +5969,8 @@ JST PH 2-pin thru-home side entry</description>
 <part name="LED_IORQ" library="my-led" deviceset="LED" device="3MM"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="R16" library="my-rcl" deviceset="R-US_" device="0207/07V" value="360"/>
-<part name="R17" library="my-rcl" deviceset="R-US_" device="0207/07V" value="680"/>
+<part name="R16" library="my-rcl" deviceset="R-US_" device="0207/07V" value="680"/>
+<part name="R17" library="my-rcl" deviceset="R-US_" device="0207/07V" value="360"/>
 <part name="P+9" library="supply1" deviceset="VCC" device=""/>
 <part name="D9" library="mylib4" deviceset="DIODE-SIGNAL" device="-5" value="1m4148"/>
 <part name="C7" library="my-rcl" deviceset="C-US" device="-5MM" value="0u1"/>
@@ -6039,6 +6039,8 @@ JST PH 2-pin thru-home side entry</description>
 <text x="149.86" y="27.94" size="1.778" layer="97" ratio="10" rot="R90">BOOT</text>
 <text x="91.44" y="-50.8" size="1.778" layer="97" ratio="10">Wait State
 Flip Flop</text>
+<text x="-88.9" y="66.04" size="1.016" layer="95">Documentation is mostly in the .brd file.
+See "history" and "to-do" layers.</text>
 </plain>
 <instances>
 <instance part="IC1" gate="1" x="-7.62" y="10.16" smashed="yes" rot="R90">
@@ -6779,6 +6781,8 @@ Pull-Downs</text>
 <text x="-22.86" y="0" size="1.778" layer="97" ratio="10" rot="R90">Memory</text>
 <text x="73.66" y="-38.1" size="1.778" layer="97" ratio="10" rot="R180">Boot</text>
 <text x="176.276" y="41.656" size="1.778" layer="97" ratio="10" rot="R270">Serial</text>
+<text x="-7.62" y="-22.86" size="1.016" layer="95">Documentation is mostly in the .brd file.
+See "history" and "to-do" layers.</text>
 </plain>
 <instances>
 <instance part="IC2" gate="G$1" x="22.86" y="43.18" smashed="yes">
@@ -7494,6 +7498,8 @@ bypass caps.   Either the TH caps, or the SMT
 caps on the back should be enough.</text>
 <text x="76.2" y="86.36" size="1.778" layer="96">AVR AutoReset</text>
 <text x="73.66" y="48.26" size="1.778" layer="96">User LED/Button</text>
+<text x="-5.08" y="106.68" size="1.016" layer="95">Documentation is mostly in the .brd file.
+See "history" and "to-do" layers.</text>
 </plain>
 <instances>
 <instance part="PWR2" gate="G$1" x="-12.7" y="58.42" smashed="yes" rot="R180">
