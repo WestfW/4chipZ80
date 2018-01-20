@@ -13,9 +13,9 @@
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
@@ -64,7 +64,7 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="History" color="10" fill="1" visible="no" active="yes"/>
+<layer number="100" name="History" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="101" name="Documentation" color="6" fill="1" visible="no" active="yes"/>
 <layer number="102" name="To-Do" color="24" fill="1" visible="no" active="yes"/>
 <layer number="103" name="old-tsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -316,7 +316,7 @@
 <wire x1="33.401" y1="19.685" x2="33.401" y2="70.485" width="0.4" layer="121"/>
 <wire x1="19.939" y1="70.485" x2="19.939" y2="19.685" width="0.4" layer="121"/>
 <wire x1="33.401" y1="19.685" x2="19.939" y2="19.685" width="0.4" layer="121"/>
-<text x="20.066" y="70.993" size="1.778" layer="121" font="fixed" ratio="16">IC1 Z80</text>
+<text x="19.58975" y="70.993" size="1.778" layer="121" font="fixed" ratio="16">IC1 Z80</text>
 <wire x1="19.939" y1="70.485" x2="33.401" y2="70.485" width="0.4" layer="121"/>
 <wire x1="61.341" y1="18.0975" x2="61.341" y2="58.7375" width="0.4" layer="121"/>
 <wire x1="47.879" y1="58.7375" x2="47.879" y2="18.0975" width="0.4" layer="121"/>
@@ -4074,7 +4074,7 @@ Z84C0004</text>
 <text x="51.09799375" y="52.054253125" size="1.016" layer="122" font="fixed" ratio="16" rot="MR180">A16/Vcc</text>
 <rectangle x1="59.055" y1="51.7525" x2="60.325" y2="53.34" layer="30"/>
 <text x="-3.01615" y="39.694415625" size="1.27" layer="100" font="fixed" ratio="12">20170228 by WestfW: "version 2" in silkscreen</text>
-<text x="10.556875" y="96.8375" size="1.6764" layer="121" ratio="16">Version 3</text>
+<text x="32.22625" y="72.151875" size="1.6764" layer="121" ratio="16">Version 3</text>
 <wire x1="45.72" y1="81.75625" x2="45.72" y2="90.4875" width="0.6" layer="122"/>
 <wire x1="45.72" y1="90.4875" x2="46.355" y2="91.1225" width="0.6" layer="122"/>
 <wire x1="46.355" y1="91.1225" x2="47.704375" y2="91.1225" width="0.6" layer="122"/>
@@ -4235,6 +4235,7 @@ Z84C0004</text>
 <text x="68.190440625" y="62.728146875" size="1.6764" layer="122" ratio="16" rot="MR0">1</text>
 <rectangle x1="12.779375" y1="45.4025" x2="14.525625" y2="46.0375" layer="42"/>
 <text x="-3.095525" y="56.045665625" size="1.27" layer="100" font="fixed" ratio="12">20180119 by WestfW: Slight adjustment to bottom silk, from gerbv review.</text>
+<text x="61.515625" y="3.730625" size="1.778" layer="121" ratio="16">Version 3</text>
 </plain>
 <libraries>
 <library name="zilog">
