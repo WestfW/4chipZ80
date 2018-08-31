@@ -26,3 +26,5 @@ With hand-done re-work, this design is known to work.  See the notes in the "To-
  2. Z80-4chip-v3.\* Adds sockets for I2C EEPROM "Floppy Disks" that should permit use of CP/M and perhaps other Operating Systems.  Just4Fun has implemented the CP/M and QP/M BIOS and etc.  This has also not yet been fabbed or tested (but I have a volunteer!)  (Also Gerbers-V3/\* has pre-made geber files.)
 
 I don't know if I'll be sending the "new" design(s) to actually be built.  A guy can only use so many Z80 boards, and I'm not up for being "in business."  I'll try to keep this update if other people use the design successfully.
+
+Potential users may want to note that the original developer of the 4-chip Z80 system (Just4Fun) has published a new and improved version of the design that includes a PCB, at https://hackaday.io/project/159973
